@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Hearing Aids",
+    "conditions": "Hearing Conditions",
+    "pricing": "Pricing",
+    "zzzs": "ZZZS Referral",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Tips"
+  },
+  "hero": {
+    "badge": "Danavox Partner",
+    "rating": "4.9",
+    "titleLine1": "Hear the world",
+    "titleLine2": "clearer than",
+    "titleLine3": "ever before",
+    "subtitle": "Danish quality hearing aids with",
+    "subtitleCta": "80 years of tradition",
+    "subtitleResult": "for natural listening.",
+    "ctaPrimary": "Book appointment",
+    "ctaSecondary": "Free consultation",
+    "patients": "satisfied patients",
+    "response": "response",
+    "freeQuote": "Free",
+    "quote": "consultation",
+    "guarantee": "guarantee"
+  },
+  "heroProducts": {
+    "inEar": "In-ear",
+    "behindEar": "Behind-ear",
+    "tinnitus": "Tinnitus",
+    "zzzs": "ZZZS referral"
+  },
+  "benefits": {
+    "badge": "Why Danavox",
+    "title": "Danish quality",
+    "titleHighlight": "for your hearing",
+    "subtitle": "80 years of innovation and premium technology for best results."
+  },
+  "products": {
+    "badge": "Our offer",
+    "title": "Hearing aids",
+    "titleHighlight": "for every style",
+    "subtitle": "Choose a device that fits your needs and lifestyle.",
+    "moreInfo": "Learn more",
+    "inEar": "In-ear hearing aids",
+    "inEarDesc": "Discrete and comfortable devices that fit perfectly in the ear.",
+    "behindEar": "Behind-ear hearing aids",
+    "behindEarDesc": "Powerful devices with latest technology for all levels of hearing loss."
+  },
+  "conditions": {
+    "badge": "Hearing Conditions",
+    "title": "How can we",
+    "titleHighlight": "help you",
+    "subtitle": "Expert approach to most common hearing problems."
+  },
+  "zzzs": {
+    "badge": "ZZZS Partner",
+    "title": "Hearing aid",
+    "titleHighlight": "with referral",
+    "subtitle": "Take advantage of cost reimbursement through health insurance.",
+    "step1Title": "1. Get a referral",
+    "step1Desc": "Visit your GP who will issue a referral for an audiological examination.",
+    "step2Title": "2. Complete the exam",
+    "step2Desc": "Book a free hearing test with us. Together we select the most suitable device.",
+    "step3Title": "3. Receive your device",
+    "step3Desc": "After ZZZS approval, receive your hearing aid with insurance coverage.",
+    "ctaTitle": "Need help with the process?",
+    "ctaDesc": "Call us and we'll explain the entire procedure."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Transparent",
+    "titleHighlight": "prices",
+    "subtitle": "Clear pricing with no hidden costs. ZZZS coverage reduces the final cost.",
+    "from": "from",
+    "withZZZS": "with ZZZS coverage",
+    "selfPay": "self-pay",
+    "consultation": "Free consultation",
+    "consultationDesc": "Hearing test and options presentation"
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Have",
+    "titleHighlight": "questions?",
+    "subtitle": "Answers to the most common questions about hearing aids."
+  },
+  "testimonials": {
+    "badge": "Patient Reviews",
+    "title": "What our",
+    "titleHighlight": "patients say",
+    "subtitle": "Real stories from satisfied Danavox hearing aid users."
+  },
+  "contact": {
+    "badge": "Contact",
+    "titlePrefix": "Get in",
+    "titleHighlight": "touch with us",
+    "subtitle": "Book a free hearing test or send us an inquiry.",
+    "preferCall": "Prefer to call?",
+    "responseInfo": "We answer calls during business hours. Email us for inquiries.",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Business hours",
+    "formTitle": "Send inquiry",
+    "formSubtitle": "We'll respond as soon as possible.",
+    "labelName": "Full name",
+    "labelEmail": "Email address",
+    "labelPhone": "Phone number",
+    "labelService": "Service",
+    "labelMessage": "Message",
+    "placeholderName": "Enter your name",
+    "placeholderEmail": "name@email.com",
+    "placeholderPhone": "040 123 456",
+    "placeholderMessage": "Your question or request...",
+    "selectService": "Select a service",
+    "submit": "Send inquiry",
+    "submitting": "Sending...",
+    "successTitle": "Message sent!",
+    "successMessage": "Thank you for your message. We'll respond as soon as possible.",
+    "errorTitle": "Error",
+    "errorMessage": "An error occurred. Please try again or call us.",
+    "privacyNote": "Your data is safe. Read our privacy policy."
+  },
+  "footer": {
+    "description": "Danavox hearing aids - Danish quality with 80 years of tradition.",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookies",
+    "hoursWeekdays": "Mon - Fri",
+    "hoursSaturday": "Saturday",
+    "areaTitle": "Location",
+    "areaText": "Ljubljana",
+    "copyright": "All rights reserved."
+  },
+  "cta": {
+    "callNow": "Call now",
+    "bookAppointment": "Book appointment",
+    "freeConsultation": "Free consultation",
+    "learnMore": "Learn more"
+  }
+}

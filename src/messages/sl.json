@@ -1,0 +1,145 @@
+{
+  "nav": {
+    "home": "Domov",
+    "products": "Slušni aparati",
+    "conditions": "Težave s sluhom",
+    "pricing": "Cenik",
+    "zzzs": "Napotnica ZZZS",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "blog": "Nasveti"
+  },
+  "hero": {
+    "badge": "Danavox partner",
+    "rating": "4.9",
+    "titleLine1": "Slišite svet",
+    "titleLine2": "jasneje kot",
+    "titleLine3": "kadarkoli",
+    "subtitle": "Danska kakovost slušnih aparatov z",
+    "subtitleCta": "80-letno tradicijo",
+    "subtitleResult": "za naravno poslušanje.",
+    "ctaPrimary": "Naročite se",
+    "ctaSecondary": "Brezplačno svetovanje",
+    "patients": "zadovoljnih pacientov",
+    "response": "odziv",
+    "freeQuote": "Brezplačen",
+    "quote": "pregled",
+    "guarantee": "garancija"
+  },
+  "heroProducts": {
+    "inEar": "V-ušesni",
+    "behindEar": "Za-ušesni",
+    "tinnitus": "Tinitus",
+    "zzzs": "ZZZS napotnica"
+  },
+  "benefits": {
+    "badge": "Zakaj Danavox",
+    "title": "Danska kakovost",
+    "titleHighlight": "za vaš sluh",
+    "subtitle": "80 let inovacij in vrhunske tehnologije za najboljše rezultate."
+  },
+  "products": {
+    "badge": "Naša ponudba",
+    "title": "Slušni aparati",
+    "titleHighlight": "za vsak slog",
+    "subtitle": "Izberite aparat, ki ustreza vašim potrebam in življenjskemu slogu.",
+    "moreInfo": "Več informacij",
+    "inEar": "V-ušesni slušni aparati",
+    "inEarDesc": "Diskretni in udobni aparati, ki se popolnoma prilegajo ušesu.",
+    "behindEar": "Za-ušesni slušni aparati",
+    "behindEarDesc": "Zmogljivi aparati z najnovejšo tehnologijo za vse stopnje naglušnosti."
+  },
+  "conditions": {
+    "badge": "Težave s sluhom",
+    "title": "Kako vam",
+    "titleHighlight": "lahko pomagamo",
+    "subtitle": "Strokovni pristop k najpogostejšim težavam s sluhom."
+  },
+  "zzzs": {
+    "badge": "ZZZS partner",
+    "title": "Slušni aparat",
+    "titleHighlight": "na napotnico",
+    "subtitle": "Izkoristite pravico do povračila stroškov preko zdravstvenega zavarovanja.",
+    "step1Title": "1. Pridobite napotnico",
+    "step1Desc": "Obiščite svojega osebnega zdravnika, ki vam izda napotnico za avdiološki pregled.",
+    "step2Title": "2. Opravite pregled",
+    "step2Desc": "Naročite se na brezplačen pregled sluha pri nas. Skupaj izberemo najprimernejši aparat.",
+    "step3Title": "3. Prejemite aparat",
+    "step3Desc": "Po odobritvi ZZZS prejmete slušni aparat s kritjem zavarovalnice.",
+    "ctaTitle": "Potrebujete pomoč pri postopku?",
+    "ctaDesc": "Pokličite nas in vam bomo pojasnili celoten postopek."
+  },
+  "pricing": {
+    "badge": "Cenik",
+    "title": "Transparentne",
+    "titleHighlight": "cene",
+    "subtitle": "Jasne cene brez skritih stroškov. ZZZS kritje znižuje končni strošek.",
+    "from": "od",
+    "withZZZS": "z ZZZS kritjem",
+    "selfPay": "samoplačniško",
+    "consultation": "Brezplačno svetovanje",
+    "consultationDesc": "Pregled sluha in predstavitev možnosti"
+  },
+  "faq": {
+    "badge": "Pogosta vprašanja",
+    "title": "Imate",
+    "titleHighlight": "vprašanja?",
+    "subtitle": "Odgovori na najpogostejša vprašanja o slušnih aparatih."
+  },
+  "testimonials": {
+    "badge": "Mnenja pacientov",
+    "title": "Kaj pravijo",
+    "titleHighlight": "naši pacienti",
+    "subtitle": "Resnične zgodbe zadovoljnih uporabnikov Danavox slušnih aparatov."
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "titlePrefix": "Stopite v",
+    "titleHighlight": "stik z nami",
+    "subtitle": "Naročite se na brezplačni pregled sluha ali nam pošljite povpraševanje.",
+    "preferCall": "Raje pokličete?",
+    "responseInfo": "Na vaš klic odgovorimo v delovnem času. Pišite nam po e-pošti za povpraševanja.",
+    "phone": "Telefon",
+    "email": "E-pošta",
+    "hours": "Delovni čas",
+    "formTitle": "Pošljite povpraševanje",
+    "formSubtitle": "Odgovorili vam bomo v najkrajšem možnem času.",
+    "labelName": "Ime in priimek",
+    "labelEmail": "E-poštni naslov",
+    "labelPhone": "Telefonska številka",
+    "labelService": "Storitev",
+    "labelMessage": "Sporočilo",
+    "placeholderName": "Vpišite vaše ime",
+    "placeholderEmail": "ime@email.si",
+    "placeholderPhone": "040 123 456",
+    "placeholderMessage": "Vaše vprašanje ali želja...",
+    "selectService": "Izberite storitev",
+    "submit": "Pošlji povpraševanje",
+    "submitting": "Pošiljam...",
+    "successTitle": "Sporočilo poslano!",
+    "successMessage": "Hvala za vaše sporočilo. Odgovorili vam bomo v najkrajšem možnem času.",
+    "errorTitle": "Napaka",
+    "errorMessage": "Prišlo je do napake. Prosimo, poskusite znova ali nas pokličite.",
+    "privacyNote": "Vaši podatki so varni. Preberi politiko zasebnosti."
+  },
+  "footer": {
+    "description": "Danavox slušni aparati - danska kakovost z 80-letno tradicijo.",
+    "quickLinks": "Hitre povezave",
+    "services": "Storitve",
+    "legal": "Pravne informacije",
+    "privacy": "Politika zasebnosti",
+    "terms": "Splošni pogoji",
+    "cookies": "Piškotki",
+    "hoursWeekdays": "Pon - Pet",
+    "hoursSaturday": "Sobota",
+    "areaTitle": "Lokacija",
+    "areaText": "Ljubljana",
+    "copyright": "Vse pravice pridržane."
+  },
+  "cta": {
+    "callNow": "Pokličite zdaj",
+    "bookAppointment": "Naročite se",
+    "freeConsultation": "Brezplačno svetovanje",
+    "learnMore": "Več informacij"
+  }
+}
