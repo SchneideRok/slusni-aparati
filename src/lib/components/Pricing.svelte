@@ -58,9 +58,13 @@
       {#each pricingItems as item, i}
         {@const Icon = item.icon}
         <div
-          class="bg-background p-8 lg:p-10 flex flex-col {item.popular ? 'bg-[hsl(var(--sage))]' : ''}"
+          class="group bg-background p-8 lg:p-10 flex flex-col relative overflow-hidden hover:shadow-lg transition-all duration-500 {item.popular ? 'bg-[hsl(var(--sage))]' : ''}"
           style="animation: fadeIn 0.6s ease forwards; animation-delay: {i * 0.1}s;"
         >
+          {#if item.popular}
+            <div class="absolute top-0 left-0 right-0 h-1 bg-[hsl(var(--primary))]"></div>
+          {/if}
+
           {#if item.popular}
             <span class="label-uppercase text-[hsl(var(--primary))] tracking-[0.15em] text-xs mb-6">
               Priporočamo
@@ -70,7 +74,7 @@
           {/if}
 
           <!-- Icon -->
-          <div class="w-14 h-14 rounded-full border border-border flex items-center justify-center mb-6 {item.popular ? 'border-[hsl(var(--primary))]/30 bg-background' : ''}">
+          <div class="w-14 h-14 rounded-full border border-border flex items-center justify-center mb-6 transition-all duration-300 group-hover:border-[hsl(var(--primary))]/50 group-hover:scale-105 {item.popular ? 'border-[hsl(var(--primary))]/30 bg-background' : ''}">
             <Icon class="w-6 h-6 text-[hsl(var(--primary))]" />
           </div>
 

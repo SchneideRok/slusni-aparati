@@ -2,8 +2,12 @@
   import { onMount, getContext } from "svelte";
   import { ArrowRight, ArrowLeft } from "lucide-svelte";
   import type { Translations } from "$lib/i18n/translations";
+  import HearingAidPlaceholder from "$lib/components/ui/HearingAidPlaceholder.svelte";
 
   const t = getContext<Translations>("t");
+
+  // Track image load errors
+  let imageErrors: Record<string, boolean> = $state({});
 
   // Danavox product lineup with actual images
   const productLineup = [
@@ -128,14 +132,19 @@
         >
           <!-- Product Image -->
           <div class="relative {product.color} aspect-[4/3] mb-6 overflow-hidden">
-            <img
-              src={product.image}
-              alt={product.name}
-              class="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
-            />
+            {#if !imageErrors[product.id]}
+              <img
+                src={product.image}
+                alt={product.name}
+                class="w-full h-full object-contain p-8 transition-transform duration-700 group-hover:scale-105"
+                onerror={() => imageErrors[product.id] = true}
+              />
+            {:else}
+              <HearingAidPlaceholder variant={product.tier.toLowerCase() as 'essential' | 'advanced' | 'premium'} />
+            {/if}
 
             <!-- Tier Badge -->
-            <div class="absolute top-6 left-6">
+            <div class="absolute top-6 left-6 z-10">
               <span class="label-uppercase text-xs tracking-[0.15em] text-muted-foreground bg-white/80 dark:bg-black/80 px-3 py-1.5 backdrop-blur-sm">
                 {product.tier}
               </span>
@@ -230,6 +239,7 @@
       </a>
     </div>
   </div>
+
 </section>
 
 <style>

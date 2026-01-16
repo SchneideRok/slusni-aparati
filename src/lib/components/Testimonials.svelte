@@ -52,12 +52,18 @@
     <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
       {#each testimonials as testimonial, i}
         <article
-          class="relative"
+          class="group relative p-6 rounded-lg transition-all duration-500 hover:bg-white/50 dark:hover:bg-black/10"
           style="animation: fadeSlideUp 0.7s ease forwards; animation-delay: {i * 0.15}s;"
         >
+          <!-- Corner accent -->
+          <div class="absolute top-0 left-0 w-12 h-12 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <div class="absolute top-0 left-0 w-full h-px bg-[hsl(var(--primary))]/30"></div>
+            <div class="absolute top-0 left-0 h-full w-px bg-[hsl(var(--primary))]/30"></div>
+          </div>
+
           <!-- Quote Icon -->
           <div class="mb-6">
-            <Quote class="w-10 h-10 text-[hsl(var(--primary))]/30" />
+            <Quote class="w-10 h-10 text-[hsl(var(--primary))]/30 transition-all duration-300 group-hover:text-[hsl(var(--primary))]/50 group-hover:scale-110" />
           </div>
 
           <!-- Stars -->
@@ -74,7 +80,7 @@
 
           <!-- Author -->
           <div class="flex items-center gap-4 pt-6 border-t border-border">
-            <div class="w-12 h-12 rounded-full bg-[hsl(var(--sage))] flex items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-[hsl(var(--sage))] flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
               <span class="text-[hsl(var(--primary))] font-serif text-lg font-medium">
                 {testimonial.name.charAt(0)}
               </span>

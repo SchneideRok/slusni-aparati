@@ -61,4 +61,11 @@
       </div>
     </div>
   </div>
+
+  <!-- Wave divider to Contact -->
+  <div class="wave-divider mt-16 lg:mt-24" style="--wave-color: hsl(var(--charcoal))">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="w-full h-16 lg:h-24">
+      <path d="M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z" fill="currentColor" />
+    </svg>
+  </div>
 </section>

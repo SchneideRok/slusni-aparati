@@ -68,13 +68,13 @@
 
           <!-- Main Headline - Editorial Style -->
           <h1 class="hero-title headline-display text-foreground">
-            <span class="block overflow-hidden">
+            <span class="block overflow-visible">
               <span class="block">Slišite</span>
             </span>
-            <span class="block overflow-hidden">
+            <span class="block overflow-visible">
               <span class="block">svet</span>
             </span>
-            <span class="block overflow-hidden">
+            <span class="block overflow-visible pb-2">
               <span class="block text-[hsl(var(--primary))]">jasneje</span>
             </span>
           </h1>
