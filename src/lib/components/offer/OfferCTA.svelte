@@ -25,8 +25,8 @@
         Write to us and let's schedule a short consultation where we answer all your questions.
       </p>
 
-      <!-- Contact Button -->
-      <div class="flex justify-center mb-16">
+      <!-- Contact Button (hidden in print) -->
+      <div class="flex justify-center mb-16 no-print">
         <a
           href="mailto:info@galor.agency?subject=Ponudba%20-%20ORL%20Medicina"
           class="inline-flex items-center gap-3 border-[3px] border-[#0a0a0a] bg-[#ff2d00] px-8 py-4 text-white uppercase text-[12px] font-bold tracking-wider hover:bg-[#c92100] transition-colors group"
@@ -36,6 +36,16 @@
           <span>Write to us</span>
           <ArrowRight class="w-5 h-5 transition-transform group-hover:translate-x-1" />
         </a>
+      </div>
+
+      <!-- Print-only: Contact info -->
+      <div class="hidden print-only mb-8 text-center">
+        <p
+          class="text-[14px] text-[#0a0a0a]"
+          style="font-family: 'Space Mono', monospace;"
+        >
+          Kontakt: info@galor.agency | galor.agency
+        </p>
       </div>
 
       <!-- Signature -->
@@ -74,8 +84,8 @@
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="py-8 border-t-[3px] border-[#0a0a0a] bg-[#0a0a0a]">
+<!-- Footer (simplified in print) -->
+<footer class="py-8 border-t-[3px] border-[#0a0a0a] bg-[#0a0a0a] print:bg-white print:border-t-2 print:py-4">
   <div class="max-w-6xl mx-auto px-4 lg:px-8">
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
       <!-- Left side -->

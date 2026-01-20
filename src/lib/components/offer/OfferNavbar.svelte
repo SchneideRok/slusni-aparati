@@ -2,7 +2,7 @@
   import { ArrowUpRight } from "lucide-svelte";
 </script>
 
-<header class="sticky top-0 z-50 bg-[#f5f5f0] border-b-[3px] border-[#0a0a0a]">
+<header class="sticky top-0 z-50 bg-[#f5f5f0] border-b-[3px] border-[#0a0a0a] no-print">
   <div class="max-w-6xl mx-auto px-4 lg:px-8">
     <div class="flex items-center justify-between h-16 lg:h-20">
       <!-- GALOR Logo - Brutalist style with Bebas Neue -->

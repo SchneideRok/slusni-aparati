@@ -1027,11 +1027,294 @@
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   PRINT STYLES
+   PRINT STYLES - COMPREHENSIVE A4 OPTIMIZATION
    ═══════════════════════════════════════════════════════════════ */
 
 @media print {
-  .no-print {
+  /* ── Page Setup ── */
+  @page {
+    size: A4;
+    margin: 1.5cm 1.5cm 2cm 1.5cm;
+  }
+
+  @page :first {
+    margin-top: 1cm;
+  }
+
+  /* ── Force Background Colors & Images ── */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ── Base Typography for Print ── */
+  html {
+    font-size: 11pt;
+  }
+
+  body {
+    background: white !important;
+    color: #0a0a0a !important;
+    font-family: "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* ── Hide Interactive/Non-Print Elements ── */
+  .no-print,
+  .floating-cta,
+  .navbar-minimal,
+  nav,
+  .scroll-indicator,
+  .animate-bounce,
+  button[type="submit"],
+  .btn-primary:not(.print-show),
+  .btn-outline:not(.print-show),
+  iframe,
+  video,
+  audio {
     display: none !important;
+  }
+
+  /* ── Show Print-Only Elements ── */
+  .print-only {
+    display: block !important;
+  }
+
+  /* ── Page Break Controls ── */
+  .print-break-before {
+    page-break-before: always !important;
+  }
+
+  .print-break-after {
+    page-break-after: always !important;
+  }
+
+  .print-break-inside-avoid,
+  article,
+  .card-minimal,
+  .card-bordered,
+  table,
+  figure,
+  blockquote {
+    page-break-inside: avoid !important;
+  }
+
+  /* ── Sections - Start on New Page ── */
+  section {
+    page-break-inside: avoid;
+  }
+
+  section + section {
+    page-break-before: auto;
+  }
+
+  /* ── Remove CSS Transforms & Animations ── */
+  * {
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* ── Fix Box Shadows for Print ── */
+  [style*="box-shadow"] {
+    box-shadow: none !important;
+    border: 2px solid #0a0a0a !important;
+  }
+
+  /* ── Links - Show URLs ── */
+  a[href^="http"]:not(.print-no-url)::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #666;
+    word-break: break-all;
+  }
+
+  a[href^="#"]::after,
+  a[href^="mailto"]::after,
+  a[href^="tel"]::after {
+    content: none;
+  }
+
+  /* ── Images ── */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* ── GALOR Brutalist Style Cards - Print Friendly ── */
+  [style*="box-shadow: 6px 6px"],
+  [style*="box-shadow: 4px 4px"],
+  [style*="box-shadow: 8px 8px"] {
+    box-shadow: none !important;
+    border: 3px solid #0a0a0a !important;
+  }
+
+  /* ── Dark Sections - Preserve Colors ── */
+  .bg-\[\#0a0a0a\],
+  [class*="bg-[#0a0a0a]"] {
+    background-color: #0a0a0a !important;
+    color: #f5f5f0 !important;
+  }
+
+  .bg-\[\#f5f5f0\],
+  [class*="bg-[#f5f5f0]"] {
+    background-color: #f5f5f0 !important;
+  }
+
+  /* ── Red Accent - Keep Visible ── */
+  .text-\[\#ff2d00\],
+  [class*="text-[#ff2d00]"] {
+    color: #ff2d00 !important;
+  }
+
+  .bg-\[\#ff2d00\],
+  [class*="bg-[#ff2d00]"] {
+    background-color: #ff2d00 !important;
+  }
+
+  /* ── Grid Layout Adjustments ── */
+  .grid {
+    display: block !important;
+  }
+
+  .grid > * {
+    margin-bottom: 1.5rem;
+    page-break-inside: avoid;
+  }
+
+  @supports (display: grid) {
+    .md\:grid-cols-2,
+    .lg\:grid-cols-3 {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 1rem !important;
+    }
+  }
+
+  /* ── Container Width for Print ── */
+  .max-w-6xl,
+  .max-w-4xl,
+  .container-luxury {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* ── Reduce Vertical Spacing ── */
+  .py-20,
+  .py-32,
+  .lg\:py-32 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .mb-12,
+  .mb-16,
+  .mb-20,
+  .lg\:mb-20 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* ── Bebas Neue Headers - Print Sizing ── */
+  [style*="font-family: 'Bebas Neue'"] {
+    font-family: "Bebas Neue", "Impact", "Arial Black", sans-serif !important;
+  }
+
+  .text-\[42px\],
+  .lg\:text-\[80px\],
+  .xl\:text-\[100px\] {
+    font-size: 28pt !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-\[24px\],
+  .lg\:text-\[28px\] {
+    font-size: 14pt !important;
+  }
+
+  .text-\[28px\],
+  .lg\:text-\[36px\] {
+    font-size: 16pt !important;
+  }
+
+  /* ── Space Mono Text - Print Sizing ── */
+  [style*="font-family: 'Space Mono'"] {
+    font-family: "Space Mono", "Courier New", monospace !important;
+  }
+
+  .text-\[13px\],
+  .text-\[14px\],
+  .lg\:text-\[14px\],
+  .lg\:text-\[16px\] {
+    font-size: 10pt !important;
+  }
+
+  .text-\[11px\],
+  .text-\[10px\],
+  .text-\[9px\] {
+    font-size: 8pt !important;
+  }
+
+  /* ── Footer - Print Friendly ── */
+  footer {
+    page-break-before: avoid;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #0a0a0a;
+  }
+
+  /* ── Print Header/Footer Info ── */
+  .print-header {
+    display: block !important;
+    text-align: center;
+    font-size: 10pt;
+    color: #666;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .print-footer {
+    display: block !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    padding: 0.5rem;
+    border-top: 1px solid #ddd;
+    background: white;
   }
 }
