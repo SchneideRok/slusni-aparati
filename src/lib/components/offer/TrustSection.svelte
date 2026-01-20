@@ -60,11 +60,16 @@
 
     <!-- Process Steps -->
     <div class="border-t border-white/10 pt-12">
-      <h3 class="headline-md text-white text-center mb-12">Naslednji koraki</h3>
+      <h3 class="headline-md text-white text-center mb-6">Naslednji koraki</h3>
+
+      <!-- Meeting suggestion -->
+      <p class="text-white/70 text-center max-w-2xl mx-auto mb-12 text-sm lg:text-base">
+        Predlagam kratek sestanek v živo, kjer se pogovorimo o vaših ciljih, odgovorim na morebitna vprašanja in skupaj pogledamo, kako lahko digitalna prisotnost podpre rast vašega posla.
+      </p>
 
       <div class="grid md:grid-cols-4 gap-8">
         {#each [
-          { step: "01", title: "Potrditev", desc: "Potrjujete ponudbo" },
+          { step: "01", title: "Sestanek", desc: "Pogovorimo se o vaših ciljih" },
           { step: "02", title: "Vsebine", desc: "Zberemo gradiva in besedila" },
           { step: "03", title: "Razvoj", desc: "Oblikujemo in programiramo" },
           { step: "04", title: "Lansiranje", desc: "Testiramo in objavimo" }
