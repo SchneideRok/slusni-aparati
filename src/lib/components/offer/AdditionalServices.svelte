@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Bot, Mail, Calendar, Headphones, ArrowRight } from "lucide-svelte";
+  import { Bot, Mail, Calendar, FileText, Users, ArrowRight } from "lucide-svelte";
 </script>
 
 <section class="py-20 lg:py-32 bg-[#f5f5f0] relative overflow-hidden">
@@ -77,36 +77,36 @@
         </ul>
       </article>
 
-      <!-- Email Campaigns -->
+      <!-- CRM & Email Campaigns -->
       <article
         class="p-8 lg:p-10 border-[3px] border-[#0a0a0a] bg-white group hover:translate-x-1 hover:-translate-y-1 transition-transform"
         style="box-shadow: 6px 6px 0 #0a0a0a;"
       >
-        <Mail class="w-10 h-10 text-[#0a0a0a] mb-6" />
+        <Users class="w-10 h-10 text-[#0a0a0a] mb-6" />
         <h3
           class="text-[24px] lg:text-[28px] text-[#0a0a0a] mb-3"
           style="font-family: 'Bebas Neue', sans-serif;"
         >
-          EMAIL CAMPAIGNS
+          CRM & EMAIL CAMPAIGNS
         </h3>
         <p
           class="text-[#5a5a5a] text-[13px] lg:text-[14px] mb-6 leading-relaxed"
           style="font-family: 'Space Mono', monospace;"
         >
-          Optimized email campaigns for your website visitors. Automated flows for follow-ups, reminders, and promotions.
+          Complete patient relationship management. Track contacts, history, and automate personalized email campaigns for follow-ups and retention.
         </p>
         <ul class="space-y-3 text-[13px] text-[#5a5a5a]" style="font-family: 'Space Mono', monospace;">
           <li class="flex items-center gap-3">
             <span class="w-2 h-2 bg-[#0a0a0a]"></span>
-            Automated email flows
+            Patient contact database
           </li>
           <li class="flex items-center gap-3">
             <span class="w-2 h-2 bg-[#0a0a0a]"></span>
-            Audience segmentation
+            Automated email sequences
           </li>
           <li class="flex items-center gap-3">
             <span class="w-2 h-2 bg-[#0a0a0a]"></span>
-            Analytics and reports
+            Follow-up reminders
           </li>
         </ul>
       </article>
@@ -145,36 +145,36 @@
         </ul>
       </article>
 
-      <!-- Hearing Test Widget -->
+      <!-- Document Automation -->
       <article
         class="p-8 lg:p-10 border-[3px] border-[#0a0a0a] bg-white group hover:translate-x-1 hover:-translate-y-1 transition-transform"
         style="box-shadow: 6px 6px 0 #0a0a0a;"
       >
-        <Headphones class="w-10 h-10 text-[#0a0a0a] mb-6" />
+        <FileText class="w-10 h-10 text-[#0a0a0a] mb-6" />
         <h3
           class="text-[24px] lg:text-[28px] text-[#0a0a0a] mb-3"
           style="font-family: 'Bebas Neue', sans-serif;"
         >
-          ONLINE HEARING TEST
+          DOCUMENT AUTOMATION
         </h3>
         <p
           class="text-[#5a5a5a] text-[13px] lg:text-[14px] mb-6 leading-relaxed"
           style="font-family: 'Space Mono', monospace;"
         >
-          Interactive widget for basic hearing testing on your website. Collects potential patient contacts and guides them to booking an appointment.
+          Automate patient documentation, reports, and forms. Digital signatures, automatic PDF generation, and seamless integration with your workflow.
         </p>
         <ul class="space-y-3 text-[13px] text-[#5a5a5a]" style="font-family: 'Space Mono', monospace;">
           <li class="flex items-center gap-3">
             <span class="w-2 h-2 bg-[#0a0a0a]"></span>
-            Lead generation
+            Auto-generated reports
           </li>
           <li class="flex items-center gap-3">
             <span class="w-2 h-2 bg-[#0a0a0a]"></span>
-            Personalized results
+            Digital forms & signatures
           </li>
           <li class="flex items-center gap-3">
             <span class="w-2 h-2 bg-[#0a0a0a]"></span>
-            Booking guidance
+            PDF export & archiving
           </li>
         </ul>
       </article>
