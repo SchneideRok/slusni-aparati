@@ -18,7 +18,7 @@
           <span class="block">Spletna stran,</span>
         </span>
         <span class="block overflow-visible pb-2">
-          <span class="block text-[hsl(var(--primary))]">ki prinaša paciente</span>
+          <span class="block text-[hsl(var(--primary))]">ki prinaša stranke</span>
         </span>
       </h1>
 
